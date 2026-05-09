@@ -4,7 +4,7 @@
 * Version    : 1.0.4
 * Release    : 26-4-2013
 * License    : CC BY-SA 3.0 | http://creativecommons.org/licenses/by-sa/3.0/
-* Script     : Javascript / jQuery
+* Script     : JavaScript / jQuery
 *
 * Programmer : Jens Eldering
 * Contact    : jens@atecmedia.com
@@ -89,11 +89,11 @@
         });
     }
 
-    // Duo the jQuery $(window).height bug we need to use a native JavaScript function to determine the window height
+    // Due to the jQuery $(window).height bug we need to use a native JavaScript function to determine the window height
     $.fn.pageme.height = function() {
         var height;
-        //Standards browsers mozilla, netscape, opera and IE7
-        if (typeof window.innerHeight != 'undefined') height = window.innerHeight
+        // Standards browsers mozilla, netscape, opera and IE7
+        if (typeof window.innerHeight != 'undefined') height = window.innerHeight;
         // IE6
         else if (typeof document.documentElement != 'undefined' && typeof document.documentElement.clientHeight != 'undefined' && document.documentElement.clientHeight != 0) height = document.documentElement.clientHeight;
         // Older IE
